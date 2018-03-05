@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>超级榴莲吼吼</title>
+	<link rel="stylesheet" href="css/public.css" />
+    <link rel="stylesheet" href="css/goods.css" />
+    <link rel="shortcut icon" href="img/1.jpg" />
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/public.js"></script>
+    <script src="js/goods.js"></script>
+</head>
+
+<body>
+<!--最上面的灰色欢迎横幅-->
+<div id="top_out">
+	<div id="top">
+    	<!--左边-->
+        <div id="top_out_left">
+            <ul>
+                <li class="float_left">hi,欢迎来到永辉超市</li>
+                <li class="float_left"><a href="login.html">登录</a></li>
+                <li class="float_left"><a href="register.html">免费注册</a></li>
+            </ul>
+        </div>
+        <!--右边-->
+        <div id="top_out_right" class="float_right">
+            <ul>
+                <li class="float_left">我的永辉</li>
+                <li class="float_left">
+                	<a href="#" id="show_qr_code">手机永辉</a><br />
+                    <!--二维码-->
+                    <div id="qr_code">
+                		<img src="img/bottom-fixednav6.jpg" />
+                    </div>
+                </li>
+                <li class="float_left"><a href="#">帮助中心</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!--搜索栏-->
+<div id="search_line">
+	<!--logo-->
+	<img src="img/saved_resource(1).png" class="float_left" />
+    
+    <!--地址-->
+    <div id="address" class="float_left">
+    	<p class="address_list_icon float_left">收货地址</p>
+        <div id="select_icon" class="float_left"></div>
+    	<div id="address_select">
+        	<select id="provice" name="provice">
+            	<option selected="selected">选择省/直辖市</option>
+            </select>
+            <select id="city" name="city">
+            	<option selected="selected">选择市</option>
+            </select>
+            <select id="area" name="area">
+            	<option selected="selected">选择区</option>
+            </select>
+        </div>
+    </div>
+    
+    <!--搜索框-->
+    <div id="search" class="float_left">
+    	<form id="search_box">
+            <input id="search_txt" class="float_left" placeholder="请输入关键字" type="text" />
+            <input id="search_btn" class="float_left" value="搜索" type="button" />
+        </form>
+        <!--下面的那些搜索建议-->
+        <div id="links">
+        	<ul>
+            	<li class="float_left"><a href="#">沐浴露</a></li>
+                <li class="float_left"><a href="#">洗发水</a></li>
+                <li class="float_left"><a href="#">水果</a></li>
+                <li class="float_left"><a href="#">花露水</a></li>
+                <li class="float_left"><a href="#">周宇</a></li>
+                <li class="float_left"><a href="#">一只狗狗</a></li>
+                
+            </ul>
+        </div>
+    </div>
+    
+    <!--购物车车-->
+    <div id="shop_car" class="float_left">
+    	<div id="shop_car_icon" class="float_left"></div>
+    	<a href="#" class="float_left">购物车<span>0</span>件</a>
+    </div>
+    
+    <!--品质生活的图-->
+    <img class="float_right" src="img/saved_resource(2).png" />
+</div>
+
+
+<!--nav-->
+<div id="nav">
+	<!--第一行-->
+	<div id="nav_line">
+    	<div id="all_goods" class="float_left">
+        	<span>全部商品分类</span>
+        </div>
+        <div class="nav_place float_left"><a href="index.html">首页</a></div>
+        <div class="nav_place float_left"><a href="#">全球购</a></div>
+        <div class="nav_place float_left"><a href="#">永辉钱包</a></div>
+        
+        <!--右边滚动的那个欢迎用语-->
+        <div class="rolling float_right">
+        	<!--左边的三角形-->
+        	<div class="rolling_box_l"></div>
+            <div class="rolling_box">
+            	<ul id="rolling_text">
+                	<li>欢迎光临永辉微店！</li>
+                </ul>
+            </div>
+            <!--右边的三角-->
+            <div class="rolling_box_r"></div>
+        </div>
+    </div>
+</div>
+
+<!--产品内容-->
+<div id="content">
+	<p>
+        <a href="#">主页</a>
+        >
+        <a href="#">生鲜</a>
+        >
+        <a href="#">果蔬</a>
+        >
+        <a href="#">国产水果</a>
+        >
+        <a href="#">榴莲</a>
+    </p>
+	<!--产品购买信息-->
+    <div class="goods">
+        <!--左边是图片-->
+        <div class="left float_left">
+            <div id="pic">
+                <img src="img/400_1.jpg" />
+                
+                <!--放大镜效果-->
+                	<!--浮动的阴影图-->
+                <div id="float_box"></div>
+     			 
+                 	<!--放大的图-->
+                <div id="big_box">
+                	<div>
+                    	<img src="img/800_1.jpg" />
+           			</div>
+                </div>
+            </div>	
+           
+                        
+            <!--下面的图片切换-->
+            <div class="small_box">
+                <ul>
+                    <a class="prev float_left" href="#"></a>
+                    <li class="active float_left"><img src="img/50_1.jpg" /></li>
+                    <li class="float_left"><img src="img/50_2.jpg" /></li>
+                    <a class="next float_right" href="#"></a>
+                </ul>
+            </div>
+        </div>
+        
+        <!--右边是购买信息-->
+        <div class="right float_left">
+            <h3>榴莲3000g</h3>
+            
+            <div class="price">原价：
+            	<span>￥71.00</span>
+            </div>
+            
+            <div class="hang choose">选择等级:
+            	<span class="word">正常
+                	<span class="pict"></span>
+                </span>
+                
+            </div>
+            
+            <div class="hang amount">购买数量：
+            	<a class="minus" href="javascript:;">-</a><span>1</span><a class="add" href="javascript:;">+</a>
+            </div>
+            
+            <div class="hang">送&nbsp;货&nbsp;至：
+            	<span>四川省德阳市旌阳区 有货</span>
+            </div>
+            
+            <div class="hang server">支持服务：
+            	<img src="img/下载.png" />
+                <span>半日达</span>
+                <img src="img/下载 (1).png" />
+                <span>门店自提</span>
+            </div>
+            
+            <div class="hang">
+            	<a href="#" title="分享到QQ空间"><img src="img/qzone.jpg" /></a>
+                <a href="#" title="分享到微博"><img src="img/weibo.jpg" /></a>
+                <a href="#" title="分享到腾讯微博"><img src="img/txweibo.jpg" /></a>
+                <a href="#" title="分享到微信"><img src="img/weixin.jpg" /></a>
+                <a href="#" title="分享到人人网"><img src="img/renren.jpg" /></a>
+                <a href="#"><img src="img/more.jpg" /></a>
+            </div>
+            
+            <div class="hang">
+            	<div onclick=window.open("#") class="float_left button add_shopcar">加入购物车</div>
+                <div class="float_left button buy">立即购买</div>
+            </div>
+        </div>
+    </div>
+	
+    <!--详情-->
+    <div class="details">
+    	<!--左边的热卖推荐-->
+    	<div class="left_hot float_left">
+        	<h3>热卖推荐</h3>
+            <ul>
+            	<li>
+                	<img class="float_left" src="img/mangguo.jpg" />
+                    <div class="float_left">
+                    	<br />
+                        <a href="#">黄瓜1300g</a><br /><br />
+                        <span>￥7.77</span>
+                    </div>
+                </li>
+                <li>
+                	<img class="float_left" src="img/400_1.jpg" />
+                    <div class="float_left">
+                    	<br />
+                        <a href="#">榴莲3kg</a><br /><br />
+                        <span>￥71.4</span>
+                    </div>
+                </li>
+                <li>
+                	<img class="float_left" src="img/boluo.jpg" />
+                    <div class="float_left">
+                    	<br />
+                        <a href="#">菠萝1.25kg</a><br /><br />
+                        <span>￥13.97</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <!--右边的商品详情-->
+        <div class="right_det float_left">
+        	<div class="switch">
+            	<span id="goods_det" class="active float_left">商品详情</span>
+                <span id="goods_com" class="float_left">商品评论（139）</span>
+                <span id="goods_ser" class="float_left">售后服务</span>
+            </div>
+            <div class="txt">
+            	<ul>
+                	<li class="float_left">商品名称：榴莲3000g</li>
+                    <li class="float_left">商品规格：3000g</li>
+                    <li class="float_left">商品产地：泰国</li>
+                    <li class="float_left">商品毛重：3000.0g</li>
+                    <li class="float_left">品牌：我也不造啊喵~</li>
+                </ul>
+            </div>
+            
+            <!--商品详情-->
+            <div id="det_show" class="btn_show" style="display:block;">
+            	<img src="img/721榴莲3000gxq_01.jpg" />
+                <img src="img/721榴莲3000gxq_02.jpg" />
+                <img src="img/721榴莲3000gxq_03.jpg" />
+                <img src="img/721榴莲3000gxq_04.jpg" />
+            </div>
+            
+            <!--商品评论-->
+            <div id="com_show" class="btn_show" style="display:block;">
+            	<!--第一行-->
+            	<div id="com_button">
+                	<a class="active" href="javascript:;">全部</a>
+                    <a href="javascript:;">好评（0）</a>
+                    <a href="javascript:;">中评（0）</a>
+                    <a href="javascript:;">差评（0）</a>
+                </div>
+                <!--中间的rate-->
+                <div class="rating">
+                	<div class="float_left rating_left">
+                    	<span class="bold">0%</span><br />
+                        <span class="no_bold">好评度</span>
+                    </div>
+                    
+                    <div class="float_left rating_right">
+                    	<ul>
+                        	<li>好评  <span></span>  0%</li>
+                            <li>中评  <span></span>  0%</li>
+                            <li>差评  <span></span>  0%</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--评论-->
+                <p>暂时没有评论哟。</p>
+                <p style="display:none;">还没有好评。</p>
+                <p style="display:none;">其实还没有卖出去啦TAT。</p>
+                <p style="display:none;">哈哈，还没有上线啦，怎么会有人买。</p>
+            </div>
+            
+            <!--售后服务-->
+            <div id="ser_show" class="btn_show" style="display:block;">
+            	<h3>服务承诺</h3>
+                <p>网站所售产品均为厂商正品，如有任何问题可与我们客服人员联系，我们会在第一时间跟您沟通处理。我们将争取以最低的价格、最优的服务来满足您最大的需求。</p>
+            	<br />
+                <h3>温馨提示</h3>
+                <p>验货签收时请您与配送人员当面核对：商品及配件、商品金额及数量、发票（如有）、赠品（如有）等；如存在包装破损、商品错误、商品短缺、商品存在质量问题等影响签收的因素，您可以拒收全部商品（相关的赠品，配件或捆绑商品和发票应一起当场拒收）。</p>
+           		<p>由于部分商品包装更换较为频繁，因此您收到的货品有可能与图片不完全一致，请您以收到的商品实物为准，同时我们会尽量做到及时更新，由此给您带来不便多多谅解，如有任何问题可与我们客服人员联系，谢谢！</p>
+            </div>
+            
+        </div>
+        
+        <div style="clear:both;"></div>
+    </div>
+</div>
+
+
+<div id="bottom">
+	<!--第一行的五个图标-->
+	<div class="bottom_top">
+    	<ul>
+        	<li class="float_left">
+            	<img src="img/icon_defense.png" />
+                <span>品质保障</span>
+            </li>
+            <li class="float_left">
+            	<img src="img/icon_earth1.png" />
+                <span>源头直供</span>
+            </li>
+            <li class="float_left">
+            	<img src="img/icon_snow1.png" />
+                <span>自建冷库</span>
+            </li>
+            <li class="float_left">
+            	<img src="img/icon_car1.png" />
+                <span>专属配送</span>
+            </li>
+            <li class="float_left">
+            	<img src="img/icon_tree1.png" />
+                <span>本地直采</span>
+            </li>
+        </ul>
+    	
+    </div>
+    <!--第二行的文字与二维码-->
+    <div class="bottom_middle">
+    	<!--公司介绍等-->
+    	<ul class="float_left">
+        	<li class="float_left">
+            	<h3>公司介绍</h3>
+                <a href="#">关于永辉</a><br />
+                <a href="#">全国门店</a>
+            </li>
+            <li class="float_left">
+            	<h3>购物流程</h3>
+                <a href="#">新用户注册</a><br />
+                <a href="#">购物流程</a><br />
+                <a href="#">配送费用</a>
+            </li>
+            <li class="float_left">
+            	<h3>支付方式</h3>
+                <a href="#">永辉钱包支付</a><br />
+                <a href="#">银联支付</a><br />
+                <a href="#">支付宝支付</a>
+            </li>
+            <li class="float_left">
+            	<h3>售后服务</h3>
+                <a href="#">退货政策</a><br />
+                <a href="#">退货流程</a>
+            </li>
+            <li class="float_left">
+            	<h3>常见问题</h3>
+                <a href="#">发票制度</a><br />
+                <a href="#">联系客服</a>
+            </li>
+        </ul>
+        <!--客服电话-->
+        <div class="kefu float_left">
+            <div class="phone float_left">
+            	<!--放置电话图标-->
+            	<div class="float_left"></div> 
+                
+                <h3 class="float_left">客服服务热线</h3>
+                <span class="float_left">400 100 9333</span>
+            </div>
+            <span>服务时间：7:00-22:00</span>
+        </div>
+        
+        <!--关注微店-->
+        <div class="wechat float_left">
+        	<img src="img/headerFooter_03.png" />
+            <span>关注我们的微店</span>
+        </div>
+        
+        <!--关注微信-->
+        <div class="wechat float_left">
+        	<img src="img/wechat.jpg" />
+            <span>关注我们的微信</span>
+        </div>
+    </div>
+    <div style="clear:both;"></div>
+	<!--最下面的版权-->
+    <div class="bottom_bottom">
+    	<p>Copyright @2015 永辉超市 版权所有 闽ICP备05003392号</p>
+    </div>
+</div>
+
+</body>
+</html>

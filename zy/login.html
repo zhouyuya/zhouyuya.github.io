@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录吧</title>
+<link rel="shortcut icon" href="img/1.jpg" />
+<link rel="stylesheet" type="text/css" href="css/login.css" />
+</head>
+
+<body>
+<div id="top">
+	<img src="img/saved_resource(1).png" />
+</div>
+<div id="content">
+	<div id="con_left" class="left">
+    	<img src="img/contentImage.png" />
+    </div>
+    <div id="con_right" class="left">
+    	<div id="title">用户登录</div>
+    	<form>
+       		 <!--账户名-->
+        	<div class="login_form login_form1">
+                <span>账户名：</span><br />
+                <input type="text" id="username" />
+            </div>
+            <!--密码-->
+            <div class="login_form login_form2">
+            	<span>密&nbsp;&nbsp;码：</span><a class="font" href="#">忘记密码？</a><br />
+                <input type="password" id="password" />
+            </div>
+            <!--记住帐号名和登录-->
+            <div class="login_form login_form3">
+            	<div id="rem">
+                    <input type="checkbox" id="remember"/>
+                    <label for="remember"><span>记住帐号名</span></label>
+                </div>
+                <input onclick="window.open('index.html')" id="login_btn" type="button" value="登录" />
+            </div>
+        </form>
+        <div id="right_bottom">
+        	<!--激活与免费注册-->
+            <div>
+            	<a href="#" class="font">激活账号</a>
+                <a href="#" class="font float_right">免费注册</a>
+            </div>
+            <!--别的账号登录-->
+            <div id="hezuo">
+            	<span class="hezuofont">使用合作的账号登录</span>
+                <ul>
+                	<li><a href="#"><div class="logosize" id="baidu"></div>百度</a></li>
+                    <li><a href="#"><div class="logosize" id="qq"></div>QQ</a></li>
+                    <li><a href="#"><div class="logosize" id="weixin"></div>微信</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

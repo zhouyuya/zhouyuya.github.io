@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin:0;
+	padding:0;	
+}
+body {
+	font-size:12px;
+	font-family:"微软雅黑";
+}
+ul,li {
+	list-style:none;	
+}
+a {
+	text-decoration:none;	
+	color:#4c4c4c;
+}
+a:hover {
+	color:red;
+	cursor:pointer;
+}
+
+/*最上面的logo*/
+#top {
+	height:88px;	
+	border-bottom:2px solid #e0221c;
+}
+#top img {
+	margin-top:27px;
+	margin-left:37px;	
+}
+
+/*左右两边*/
+.left {
+	float:left;	
+}
+
+/*下面的内容*/
+#content
+{
+	width:1000px;
+	height:500px;	
+	margin:0 auto;
+}
+/*内容左边的图片*/
+#content #con_left {
+	margin:40px 0 0 20px;	
+}
+/*内容右边的表单*/
+#content #con_right {
+	width:380px;
+	height:420px;
+	margin:37px 0 0 60px;
+	background:#f8f8f8;	
+}
+#content #con_right .font {
+	font-size:12px;
+	color:#666;
+}
+#content #con_right #title {
+	margin-top:30px;
+	font-size:24px;
+	text-align:center;	
+}
+/*表单里面的账户名和密码输入框*/
+#content #con_right form .login_form {
+	width:300px;
+	margin:30px auto 0;
+	font-size:14px;
+}
+#content #con_right form .login_form input {
+	width:300px;
+	height:32px;
+	border:1px solid #ccc;	
+}
+/*密码输入框上的忘记密码*/
+#content #con_right form .login_form2 a {
+	float:right;
+}
+
+/*记住帐号名和登录按钮*/
+	/*记住帐号名那个复选小框框*/
+#content #con_right form .login_form3 #rem #remember {
+	width:13px;
+	height:13px;	
+	vertical-align:-3px;
+}
+#content #con_right form .login_form3 #rem span {
+	font-size:12px;	
+}
+#content #con_right form .login_form3 #login_btn {
+	font-size:18px;
+	color:#fff;
+	background:#e0221c;	
+	border:#e0221c;
+	cursor:pointer;
+}
+
+/*下面的激活账号免费注册与合作账号登录*/
+#content #con_right #right_bottom {
+	width:300px;
+	margin:0 auto;	
+}
+	/*免费注册右浮动*/
+#content #con_right #right_bottom .float_right {
+	float:right;	
+}
+/*最下面的合作*/
+#content #con_right #right_bottom #hezuo {
+	margin-top:23px;	
+}
+#content #con_right #right_bottom #hezuo .hezuofont {
+	font-size:14px;
+}
+/*合作登录的一系列账号*/
+#content #con_right #right_bottom #hezuo ul {
+	margin-top:10px;	
+}
+#content #con_right #right_bottom #hezuo ul	li {
+	float:left;	
+	margin-right:15px;
+}
+	/*放置三个logo*/
+#content #con_right #right_bottom #hezuo ul	li .logosize {
+	width:18px;
+	height:18px;
+	display:inline-block;
+	margin:0 5px -4px 0;	
+}
+#content #con_right #right_bottom #hezuo ul	li #baidu {
+	background:url(../img/baidu-logo.jpg) no-repeat;	
+}
+#content #con_right #right_bottom #hezuo ul	li #qq {
+	background:url(../img/qq-logo.png) no-repeat;	
+}
+#content #con_right #right_bottom #hezuo ul	li #weixin {
+	background:url(../img/weixin-logo.jpg) no-repeat;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

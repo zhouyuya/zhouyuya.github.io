@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin:0;
+	padding:0;	
+}
+body {
+	font-size:12px;
+	font-family:"微软雅黑";
+	color:#666;
+	background:#f2f2f2;	
+}
+ul,li {
+	list-style:none;	
+}
+a {
+	text-decoration:none;	
+}
+a:hover {
+	color:red;
+	cursor:pointer;
+}
+
+/*top logo的定位*/
+#top {
+	width:988px;
+	margin:0 auto;
+	overflow:hidden;
+}
+#top .log {
+	margin:25px 0 20px;		
+}
+#top .log a {
+	display:inline-block;	
+}
+
+/*center中间注册成功的定位，被分成了两边，左边一张图片，右边是两行字*/
+#center {
+	width:800px;
+	height:96px;	
+	margin:30px auto 20px;
+	border-bottom:1px solid #d7d7d7;
+}
+	/*左边*/
+#center img {
+	float:left;	
+	clear:both;
+}
+	/*右边*/
+#center .center_r {
+	margin:8px 0 0 10px;
+	float:left;	
+}
+#center .center_r .gongxi {
+	color:#8fc31f;
+	font-size:18px;
+	font-weight:bold;
+}
+#center .center_r div {
+	height:45px;
+	line-height:45px;	
+}
+
+/*footer也被分成了两边，左边卡，右边卡的作用*/
+#footer {
+	width:800px;
+	height:300px;
+	margin:35px auto;	
+}
+	/*左边*/
+#footer .footer_l {
+	width:360px;
+	float:left;
+	margin-left:80px;
+}
+#footer .footer_l .card_num {
+	color:#545454;
+	font-size:24px;
+}
+	/*右边*/
+#footer .footer_r {
+	width:360px;
+	float:left;	
+	margin-top:48px;
+}
+#footer .footer_r li {
+	height:25px;
+	line-height:25px;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

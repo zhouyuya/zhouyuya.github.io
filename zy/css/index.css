@@ -1,0 +1,716 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;	
+}
+body {
+	font-size:12px;
+	font-family:"微软雅黑";
+}
+ul,li {
+	list-style:none;	
+}
+a {
+	text-decoration:none;	
+	color:#4c4c4c;
+}
+a:hover {
+	color:red;
+	cursor:pointer;
+}
+body {
+	width:100%;	
+}
+
+
+
+/*向左浮动*/
+.float_left {
+	float:left;	
+}
+/*向右浮动*/
+.float_right {
+	float:right;	
+}
+
+/*吸顶效果*/
+#fixed_top_out {
+	width:100%;
+	height:36px;
+	position:fixed;
+	display:none;
+	-top:260px;
+	right:0;
+	padding-top:2px;
+	padding-bottom:2px;
+	background:#fff;	
+	z-index:100;
+}
+#fixed_top_out #fixed_top {
+	width:1190px;
+	margin:0 auto;
+}
+
+#fixed_top_out #fixed_top #fixed_all_goods {
+	width:200px;
+	height:36px;
+	line-height:36px;
+	background:#000;
+	color:#fff;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;	
+}
+/*搜索*/
+#fixed_top #fixed_search {
+	margin-left:157px;	
+}
+	/*输入框*/
+#fixed_top #fixed_search #fixed_search_box #fixed_search_txt {
+	height:24px;
+	width:300px;
+	padding:4px 10px 4px 26px;
+	border:2px solid #e81a29;	
+	background:url(../img/icon-search.png) 5px 8px no-repeat;
+}
+	/*提交按钮*/
+#fixed_top #fixed_search #fixed_search_box #fixed_search_btn {
+	height:36px;
+	width:80px;
+	border:none;
+	background:#e81a29;	
+	color:#FFF;
+	font-size:14px;
+	cursor:pointer;
+}	
+
+/*购物车*/
+#fixed_top #fixed_shop_car {
+	height:34px;
+	width:100px;
+	line-height:34px;
+	margin-left:20px;
+	border:1px solid #c7c7c7;	
+	text-align:center;
+}
+	/*购物车车的小图标*/
+#fixed_top #fixed_shop_car #fixed_shop_car_icon {
+	height:22px;
+	width:22px;	
+	display:inline-block;
+	margin:7px 6px 0 6px;
+	background:url(../img/icons.png);
+}
+
+
+/*最顶上的灰色的*/
+#top_out {
+	width:100%;	
+	height:30px;
+	background:#f2f2f2;
+	color:#4c4c4c;
+}
+#top {
+	width:1190px;
+	margin:0 auto;	
+}
+
+#top_out #top ul li {
+	height:30px;
+	line-height:30px;
+	margin-right:15px;	
+}
+
+/*手机永辉的二维码*/
+#top_out #top_out_right #qr_code {
+	position:absolute;
+	display:none;
+	border:1px solid #ccc;	
+	padding:5px;
+}
+
+
+/*网站内测*/
+#test {
+	width:100%;	
+}
+#test img {
+	width:1190px;	
+	display:block;
+	margin:0 auto;
+}
+
+
+/*搜索栏那一行*/
+#search_line {
+	width:1190px;
+	height:60px;	
+	margin:30px auto 30px;
+}
+
+/*收货地址*/
+#search_line #address {
+	width:130px;
+	height:40px;
+	position:relative;
+}
+#search_line #address .address_list_icon {
+	height:40px;
+	margin-left:20px;
+	line-height:40px;
+	color:black;
+	font-size:18px;
+}
+	/*下拉菜单小图标*/
+#search_line #address #select_icon {
+	width:12px;
+	height:6px;
+	margin:18px 0 0 13px;
+	background:url(../img/icons-add.png) 0 -32px;	
+}
+	/*地址选择的那个选择框*/
+#search_line #address #address_select {
+	width:244px;
+	display:none;
+	position:absolute;	
+	top:40px;
+}
+
+/*提交搜索的表单*/
+#search_line #search {
+	margin-left:50px;	
+}
+	/*输入框*/
+#search_line #search #search_box #search_txt {
+	height:24px;
+	width:300px;
+	padding:4px 10px 4px 26px;
+	border:2px solid #e81a29;	
+	background:url(../img/icon-search.png) 5px 8px no-repeat;
+}
+	/*提交按钮*/
+#search_line #search #search_box #search_btn {
+	height:36px;
+	width:80px;
+	border:none;
+	background:#e81a29;	
+	color:#FFF;
+	font-size:14px;
+	cursor:pointer;
+}
+	/*搜索建议*/
+#search_line #search #links li {
+	height:20px;
+	line-height:20px;
+	margin-right:10px;
+}
+#search_line #search #links li a {
+	color:#999;
+}
+
+
+/*购物车*/
+#search_line #shop_car {
+	height:34px;
+	width:100px;
+	line-height:34px;
+	margin-left:20px;
+	border:1px solid #c7c7c7;	
+	text-align:center;
+}
+	/*购物车车的小图标*/
+#search_line #shop_car #shop_car_icon {
+	height:22px;
+	width:22px;	
+	display:inline-block;
+	margin:7px 6px 0 6px;
+	background:url(../img/icons.png);
+}
+
+
+/*导航栏*/
+#nav {
+	width:100%;	
+}
+	/*导航栏最上面的那一行*/
+#nav #nav_line {
+	width:1190px;
+	margin:0 auto;	
+}
+		/*全部商品的分类*/
+#nav #nav_line #all_goods {
+	width:200px;
+	height:36px;
+	position:relative;
+	line-height:36px;
+	background:#000;
+	color:#fff;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+}
+
+		/*下面的红底的产品*/
+#nav #nav_line #all_goods #products {
+	width:200px;
+	height:450px;
+	position:absolute;
+	
+	top:36px;
+	background:#e0221c;
+	z-index:2;
+}
+
+#nav #nav_line #all_goods #products li {
+	height:55px;
+	position:relative;
+	line-height:55px;
+	padding-left:10px;
+	text-align:left;
+	border-bottom:1px solid #e84652;
+	opacity:1;
+}
+
+#nav #nav_line #all_goods #products li:hover {
+	opacity:0.5;	
+}
+
+#nav #nav_line #all_goods #products li a {
+	color:white;
+	font-size:12px;
+	font-weight:bold;
+}
+#nav #nav_line #all_goods #products li a:hover {
+	text-decoration:underline;
+}
+
+				/*商品详情*/
+#nav #nav_line #all_goods #products li .details {
+	height:450px;
+	width:450px;
+	position:absolute;
+	left:200px;
+	color:black;
+	background:#f2f2f2;
+	display:none;	
+	z-index:3;
+}
+
+		/*黑色的字*/
+#nav #nav_line .nav_place {
+	height:36px;
+	margin-left:50px;
+	line-height:36px;	
+	font-size:16px;
+	font-weight:bold;
+	color:#000;	
+}
+
+
+		/*最右边的欢迎*/
+#nav #nav_line .rolling {
+	width:200px;
+	height:36px;
+	line-height:36px;	
+}
+			/*欢迎左右的三角*/
+#nav #nav_line .rolling .rolling_box_l {
+	width:7px;
+	height:13px;
+	display:inline-block;
+	margin-right:25px;
+	background:url(../img/icons-add.png) -28px -12px;	
+}
+#nav #nav_line .rolling .rolling_box_r {
+	width:7px;
+	height:13px;
+	display:inline-block;
+	margin-left:25px;
+	background:url(../img/icons-add.png) -35px -12px;	
+}
+			/*滚动的欢迎*/
+#nav #nav_line .rolling .rolling_box {
+	width:128px;	
+	height:28px;
+	display:inline-block;
+	font-size:14px;
+}
+#nav #nav_line .rolling .rolling_box #rolling_text {
+	width:128px;	
+	height:28px;
+	position:relative;	
+	overflow:hidden;
+}
+#nav #nav_line .rolling .rolling_box #rolling_text li {
+	position:absolute;	
+}
+
+
+/*滚动的banner*/
+#nav #banner {
+	width:1264px;
+	height:450px;
+	margin:0 auto;
+	position:relative;	
+	overflow:hidden;
+}
+#nav #banner #pics {
+	position:absolute;
+	top:0;
+	left:0px;
+	z-index:1;
+}
+#nav #banner #pics .pic {
+	width:1264px;
+	height:450px;
+}
+#nav #banner #pics .pic img {
+	width:1264px;
+	height:450px;
+}
+
+
+/*banner上的小圆点*/
+#nav #banner #libs {
+	display:flex;  /*弹性盒模型*/
+	flex-direction:row;   /*方向：横着*/
+	justify-content:space-around;   /*里面的元素有间隔*/
+
+	width:84px;
+	position:absolute;	
+	bottom:20px;
+	left:0;
+	right:0;
+	margin:auto;  /*position为absolute时：给left和right分别设置为0,然后margin:auto就可以居中了*/
+	z-index:2;
+}
+#nav #banner #libs .lib {
+	width:14px;
+	height:14px;
+	background:#F90;	
+	border-radius:50%;
+}
+
+#nav #banner #libs .active {
+	background:#F00;
+}	
+
+
+/*产品内容*/
+#content_out {
+	width:100%;	
+	background:#f9f9f9;
+}
+#content_out #content {
+	width:1190px;
+	margin:0 auto;
+}
+
+	/*每周精选*/
+#content_out #content #week {
+	padding-top:25px;	
+}
+		/*那行字*/
+#content_out #content #week #week_line {
+	width:200px;
+	height:40px;
+	background:#70c4d8;	
+}
+#content_out #content #week #week_line img {
+	margin:8px 10px 0 30px;	
+}
+#content_out #content #week #week_line span {
+	margin:10px 0 0 10px;
+	font-size:18px;
+	color:#fff;	
+}
+		/*图片内容*/
+#content_out #content #week #week_pic {
+	width:110%;
+	overflow:hidden;	
+}
+#content_out #content #week #week_pic img {
+	height:315px;
+	width:390px;
+	margin-right:20px;	
+}
+
+	/*热销推荐*/
+#content_out #content #hot {
+	margin-top:25px;	
+}
+#content_out #content #hot #hot_line {
+	width:200px;
+	height:40px;
+	background:#f5a01a;		
+}
+#content_out #content #hot #hot_line img {
+	margin:6px 10px 0 30px;	
+}
+#content_out #content #hot #hot_line span {
+	margin-top:10px;
+	font-size:18px;
+	color:#fff;	
+}
+		/*右上的更多新品*/
+#content_out #content #hot a {
+	color:#999;
+	font-size:14px;
+	margin-top:12px;
+}
+#content_out #content #hot a:hover {
+	color:#F00;
+}
+
+		/*一些产品展示*/
+#content_out #content #hot #hot_pic_line {
+	width:100%;
+	height:175px;	
+}
+#content_out #content #hot .hot_pics {
+	width:1136px;
+	height:275px;	
+}
+#content_out #content #hot .hot_pics .hot_pic {
+	width:220px;
+	height:275px;
+	text-align:center;
+	margin-right:7px;
+	background:#fff;
+}
+			/*价格*/
+#content_out #content #hot .hot_pics .hot_pic div span {
+	color:#e40011;
+	font-size:14px;
+}
+
+		/*最右边的切换按钮*/
+#content_out #content #hot #hot_btn {
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	
+	height:180px;
+}
+#content_out #content #hot #hot_btn li {
+	width:40px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	border:1px solid #999;	
+	border-radius:50px;
+	
+	color:#666;	
+	font-size:20px;
+	cursor:pointer;
+}
+#content_out #content #hot #hot_btn li:hover {
+	color:#e80011;	
+}
+#content_out #content #hot #hot_btn li.hot_active {
+	color:white;
+	background:red;
+}
+
+
+	/*猜你喜欢*/
+#content_out #content #like {
+	height:300px;
+	margin-top:125px;	
+}
+#content_out #content #like #like_line {
+	width:200px;
+	height:40px;
+	background:#e01745;		
+}
+#content_out #content #like #like_line img {
+	margin:7px 17px 0 30px;	
+}
+#content_out #content #like #like_line span {
+	margin-top:10px;
+	font-size:18px;
+	color:#fff;	
+}
+		/*商品*/
+#content_out #content #like #like_pic_line {
+	width:100%;
+	height:175px;	
+}
+#content_out #content #like .like_pics {
+	width:1136px;
+	height:275px;	
+}
+#content_out #content #like .like_pics .like_pic {
+	width:220px;
+	height:275px;
+	text-align:center;
+	margin-right:7px;
+	background:#fff;
+}
+			/*价格*/
+#content_out #content #like .like_pics .like_pic div span {
+	color:#e40011;
+	font-size:14px;
+}
+
+		/*最右边的切换按钮*/
+#content_out #content #like #like_btn {
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	
+	height:180px;
+}
+#content_out #content #like #like_btn li {
+	width:40px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	border:1px solid #999;	
+	border-radius:50px;
+	
+	color:#666;	
+	font-size:20px;
+	cursor:pointer;
+}
+#content_out #content #like #like_btn li:hover {
+	color:#e80011;	
+}
+#content_out #content #like #like_btn li.like_active {
+	color:white;
+	background:red;
+}
+
+
+	/*特色生鲜*/
+#content_out #content #fresh {
+	margin-top:50px;	
+}
+#content_out #content #fresh .more_fresh {
+	color:#999;	
+	font-size:14px;
+}
+#content_out #content #fresh a.more_fresh:hover {
+	color:red;	
+}
+#content_out #content #fresh .fresh_pics .fresh_left {
+	width:330px;
+	height:510px;
+	display:inline-block;	
+}
+#content_out #content #fresh .fresh_pics .fresh_right {
+	width:860px;
+	display:inline-block;	
+}
+
+
+/*bottom*/
+#bottom .bottom_top {
+	width:100%;	
+	height:64px;
+	padding:30px 0 30px 0;
+	border-bottom:1px solid #eeeeee;
+}
+	/*第一行*/
+#bottom .bottom_top ul {
+	width:1190px;
+	margin:0 auto;	
+}
+#bottom .bottom_top ul li {
+	width:238px;
+	height:64px;
+	text-align:center;
+
+	color:#545454;	
+	font-size:18px;
+	font-weight:bold;
+}
+#bottom .bottom_top ul li img {
+	vertical-align:middle;
+}
+#bottom .bottom_top ul li span {
+	vertical-align:middle;
+}
+
+	/*中间*/
+#bottom .bottom_middle {
+	width:1190px;
+	margin:20px auto 0;	
+}
+		/*前面的文字*/
+#bottom .bottom_middle ul {
+	width:725px;	
+}
+#bottom .bottom_middle ul li {
+	width:145px;	
+	color:#545454;
+}
+#bottom .bottom_middle ul li a {
+	display:inline-block;
+	height:22px;
+	line-height:22px;
+	color:#999;	
+} 
+#bottom .bottom_middle ul li a:hover {
+	color:#e40011;	
+} 
+		/*客服电话*/
+#bottom .bottom_middle .kefu {
+	width:234px;	
+}
+#bottom .bottom_middle .kefu .phone div {
+	width:38px;
+	height:42px;
+	display:inline-block;
+	background:url(../img/icons-add.png) -117px -386px;	
+}
+#bottom .bottom_middle .kefu .phone h3 {
+	width:192px;
+	text-align:center;	
+	color:#545454;
+}
+#bottom .bottom_middle .kefu .phone span {
+	width:192px;
+	text-align:center;
+	font-size:24px;
+	font-weight:bolder;
+	color:#545454;
+}
+#bottom .bottom_middle .kefu span {
+	display:inline-block;
+	width:234px;
+	margin-top:10px;
+	text-align:center;
+	font-size:14px;
+	color:#545454;	
+}
+		/*关注二维码*/
+#bottom .bottom_middle .wechat {
+	width:102px;
+	margin-left:10px;	
+	text-align:center;
+	font-weight:bold;
+	color:#545454;
+}
+	/*最下面的版权*/
+#bottom .bottom_bottom {
+	width:100%;
+	height:36px;
+	margin-top:20px;
+	line-height:36px;	
+	color:#f2f2f2;
+	background:#545454;
+}
+#bottom .bottom_bottom p {
+	width:100%;
+	text-align:center;	
+}
+
+
+
+
+
+
+

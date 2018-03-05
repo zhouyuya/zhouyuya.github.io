@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>注册成功喵~</title>
+<link rel="shortcut icon" href="img/1.jpg" />
+<link rel="stylesheet" type="text/css" href="css/reg_success.css" />
+</head>
+
+<body>
+<!--顶部的logo显示-->
+<div id="top">
+    <div class="log">
+        <a href="#"><img src="img/saved_resource(1).png" /></a>
+    </div>
+</div>
+
+<!--中间的注册成功及跳转-->
+<div id="center">
+	<img src="img/right.jpg" />
+    <div class="center_r">
+        <span class="gongxi">恭喜您！注册成功。</span>
+        <div>
+            <span id="miao" style="color:red;">5</span>秒后网页将自动跳转至首页，如果网页没有自动跳转，<a href="login.html">请点击这里</a>
+        </div>
+    </div>
+</div>
+
+<!--会员卡与作用，分为左右两栏-->
+<div id="footer">
+	<div class="footer_l">
+    	<span>恭喜您获得了一张永辉积分卡如下：<span><br />
+        <span class="card_num">卡号：12345678910</span>
+        <img src="img/shopcard.jpg" />
+    </div>
+    
+    <div class="footer_r">
+    	<h3 style="color:black;">积分卡使用规则：</h3>
+    	<ul>
+        	<li>1.线上（手机APP，PC商城）购物自动享受双倍积分</li>
+            <li>2.本积分卡支持手机，PC端，门店购物时享受积分累加</li>
+            <li>3.更多积分卡使用规则，请查看帮助中心的<a href="#" style="color:red;">积分卡规则</a></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+/*一个定时器，用来改变页面显示的倒计时*/
+var m=document.getElementById('miao');
+setInterval(function () {
+	var mm=m.innerHTML;
+	mm--;
+	m.innerHTML=mm;
+},1000);
+
+/*5秒后跳转*/
+setTimeout(function () {
+	window.open('login.html','_self');
+},5000);
+</script>
+
+</body>
+</html>

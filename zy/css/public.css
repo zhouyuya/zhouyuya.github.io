@@ -1,0 +1,334 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;	
+}
+body {
+	font-size:12px;
+	font-family:"微软雅黑";
+}
+ul,li {
+	list-style:none;	
+}
+a {
+	text-decoration:none;	
+	color:#4c4c4c;
+}
+a:hover {
+	color:red;
+	cursor:pointer;
+}
+body {
+	width:100%;	
+}
+
+
+
+/*向左浮动*/
+.float_left {
+	float:left;	
+}
+/*向右浮动*/
+.float_right {
+	float:right;	
+}
+
+
+/*最顶上的灰色的*/
+#top_out {
+	width:100%;	
+	height:30px;
+	background:#f2f2f2;
+	color:#4c4c4c;
+}
+#top {
+	width:1190px;
+	margin:0 auto;	
+}
+
+#top_out #top ul li {
+	height:30px;
+	line-height:30px;
+	margin-right:15px;	
+}
+
+/*手机永辉的二维码*/
+#top_out #top_out_right #qr_code {
+	position:absolute;
+	display:none;
+	border:1px solid #ccc;	
+	padding:5px;
+}
+
+
+
+
+
+/*搜索栏那一行*/
+#search_line {
+	width:1190px;
+	height:60px;	
+	margin:30px auto 30px;
+}
+
+/*收货地址*/
+#search_line #address {
+	width:130px;
+	height:40px;
+	position:relative;
+}
+#search_line #address .address_list_icon {
+	height:40px;
+	margin-left:20px;
+	line-height:40px;
+	color:black;
+	font-size:18px;
+}
+	/*下拉菜单小图标*/
+#search_line #address #select_icon {
+	width:12px;
+	height:6px;
+	margin:18px 0 0 13px;
+	background:url(../img/icons-add.png) 0 -32px;	
+}
+	/*地址选择的那个选择框*/
+#search_line #address #address_select {
+	width:244px;
+	display:none;
+	position:absolute;	
+	top:40px;
+}
+
+/*提交搜索的表单*/
+#search_line #search {
+	margin-left:50px;	
+}
+	/*输入框*/
+#search_line #search #search_box #search_txt {
+	height:24px;
+	width:300px;
+	padding:4px 10px 4px 26px;
+	border:2px solid #e81a29;	
+	background:url(../img/icon-search.png) 5px 8px no-repeat;
+}
+	/*提交按钮*/
+#search_line #search #search_box #search_btn {
+	height:36px;
+	width:80px;
+	border:none;
+	background:#e81a29;	
+	color:#FFF;
+	font-size:14px;
+	cursor:pointer;
+}
+	/*搜索建议*/
+#search_line #search #links li {
+	height:20px;
+	line-height:20px;
+	margin-right:10px;
+}
+#search_line #search #links li a {
+	color:#999;
+}
+
+
+/*购物车*/
+#search_line #shop_car {
+	height:34px;
+	width:100px;
+	line-height:34px;
+	margin-left:20px;
+	border:1px solid #c7c7c7;	
+	text-align:center;
+}
+	/*购物车车的小图标*/
+#search_line #shop_car #shop_car_icon {
+	height:22px;
+	width:22px;	
+	display:inline-block;
+	margin:7px 6px 0 6px;
+	background:url(../img/icons.png);
+}
+
+
+#nav {
+	width:100%;	
+	height:36px;
+	border-bottom:1px solid #CCC;
+}
+	/*导航栏那一行*/
+#nav #nav_line {
+	width:1190px;
+	margin:0 auto;	
+}
+		/*全部商品的分类*/
+#nav #nav_line #all_goods {
+	width:200px;
+	height:36px;
+	line-height:36px;
+	background:#000;
+	color:#fff;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+		/*黑色的字*/
+#nav #nav_line .nav_place {
+	height:36px;
+	margin-left:50px;
+	line-height:36px;	
+	font-size:16px;
+	font-weight:bold;
+}
+#nav #nav_line .nav_place a {
+	color:#000;	
+}
+#nav #nav_line .nav_place a:hover {
+	color:red;	
+}
+
+		/*最右边的欢迎*/
+#nav #nav_line .rolling {
+	width:200px;
+	height:36px;
+	line-height:36px;	
+}
+			/*欢迎左右的三角*/
+#nav #nav_line .rolling .rolling_box_l {
+	width:7px;
+	height:13px;
+	display:inline-block;
+	margin-right:25px;
+	background:url(../img/icons-add.png) -28px -12px;	
+}
+#nav #nav_line .rolling .rolling_box_r {
+	width:7px;
+	height:13px;
+	display:inline-block;
+	margin-left:25px;
+	background:url(../img/icons-add.png) -35px -12px;	
+}
+			/*滚动的欢迎*/
+#nav #nav_line .rolling .rolling_box {
+	width:128px;	
+	height:28px;
+	display:inline-block;
+	font-size:14px;
+}
+#nav #nav_line .rolling .rolling_box #rolling_text {
+	width:128px;	
+	height:28px;
+	position:relative;	
+	overflow:hidden;
+}
+#nav #nav_line .rolling .rolling_box #rolling_text li {
+	position:absolute;	
+}
+
+
+/*bottom*/
+#bottom .bottom_top {
+	width:100%;	
+	height:64px;
+	padding:30px 0 30px 0;
+	border-bottom:1px solid #eeeeee;
+}
+	/*第一行*/
+#bottom .bottom_top ul {
+	width:1190px;
+	margin:0 auto;	
+}
+#bottom .bottom_top ul li {
+	width:238px;
+	height:64px;
+	text-align:center;
+
+	color:#545454;	
+	font-size:18px;
+	font-weight:bold;
+}
+#bottom .bottom_top ul li img {
+	vertical-align:middle;
+}
+#bottom .bottom_top ul li span {
+	vertical-align:middle;
+}
+
+	/*中间*/
+#bottom .bottom_middle {
+	width:1190px;
+	margin:20px auto 0;	
+}
+		/*前面的文字*/
+#bottom .bottom_middle ul {
+	width:725px;	
+}
+#bottom .bottom_middle ul li {
+	width:145px;	
+	color:#545454;
+}
+#bottom .bottom_middle ul li a {
+	display:inline-block;
+	height:22px;
+	line-height:22px;
+	color:#999;	
+} 
+#bottom .bottom_middle ul li a:hover {
+	color:#e40011;	
+} 
+		/*客服电话*/
+#bottom .bottom_middle .kefu {
+	width:234px;	
+}
+#bottom .bottom_middle .kefu .phone div {
+	width:38px;
+	height:42px;
+	display:inline-block;
+	background:url(../img/icons-add.png) -117px -386px;	
+}
+#bottom .bottom_middle .kefu .phone h3 {
+	width:192px;
+	text-align:center;	
+	color:#545454;
+}
+#bottom .bottom_middle .kefu .phone span {
+	width:192px;
+	text-align:center;
+	font-size:24px;
+	font-weight:bolder;
+	color:#545454;
+}
+#bottom .bottom_middle .kefu span {
+	display:inline-block;
+	width:234px;
+	margin-top:10px;
+	text-align:center;
+	font-size:14px;
+	color:#545454;	
+}
+		/*关注二维码*/
+#bottom .bottom_middle .wechat {
+	width:102px;
+	margin-left:10px;	
+	text-align:center;
+	font-weight:bold;
+	color:#545454;
+}
+	/*最下面的版权*/
+#bottom .bottom_bottom {
+	width:100%;
+	height:36px;
+	margin-top:20px;
+	line-height:36px;	
+	color:#f2f2f2;
+	background:#545454;
+}
+#bottom .bottom_bottom p {
+	width:100%;
+	text-align:center;	
+}
+

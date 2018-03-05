@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin:0;
+	padding:0;	
+}
+body {
+	font-size:12px;
+	font-family:"微软雅黑";
+	color:#666;
+	background:#f2f2f2;	
+}
+ul,li {
+	list-style:none;	
+}
+a {
+	text-decoration:none;	
+}
+a:hover {
+	color:red;
+	cursor:pointer;
+}
+
+/*top头部logo的定位*/
+#top {
+	width:988px;
+	margin:0 auto;
+	overflow:hidden;
+}
+#top .log {
+	margin:25px 0 20px;		
+}
+#top .log a {
+	display:inline-block;	
+}
+
+/*content表单内容的定位*/
+#content {
+	width:600px;
+	margin:0 auto;	
+	text-align:center;
+}
+#content .title {
+	font-size:24px;
+	color:#4c4c4c;	
+	padding:9px 0;
+	border-bottom:2px solid #d7d7d7;
+}
+	/*form*/
+		/*每一行内容*/
+#content form .item {
+	float:left;
+	clear:both;
+	margin:40px 0 0 140px;
+}
+#content form .item .red {
+	color:red;
+}
+#content form .item input {
+	width:250px;
+	height:32px;
+	text-indent:3px;
+	border:1px solid #CCC;	
+}
+		/*同意协议后提交的布局*/
+#content form .bottom {
+	float:left;
+	clear:both;
+	margin:10px 0 0 180px;	
+}
+			/*复选框的小框框*/
+#content form .bottom #read {
+	vertical-align:-2px;	
+}
+#content form .bottom .btn_submit {
+	width:260px;
+	height:45px;
+	line-height:40px;
+	margin-top:40px;
+	font-size:20px;
+	color:white;
+}	
+/*这两个是用来改变”同意协议并提交“的样式，JS中用到*/
+#content form .bottom .btn_submit_gray {
+	background:#e2e2e2;
+	cursor:not-allowed;
+}
+#content form .bottom .btn_submit_red {
+	background:red;
+	cursor:pointer;
+}
+
+/*输入错误时显示，请重新输入*/
+#numError,#passError,#passDError {
+	width:70px;
+	color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
