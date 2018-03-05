@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>趣发生</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="keywords" content="趣发生 视频 视频社交" />
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/logo.ico" media="screen" />
+    <link rel="stylesheet" href="detail.css">
+    <style>
+        body{
+            margin:0;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="videowrapper">
+    <div class="cover" id="video-cover">
+    </div>
+</div>
+<div id="main">
+    <p class="title">loading...</p>
+    <p class="location">loading...</p>
+    <p class="time">loading...</p>
+</div>
+<div class="info">
+    <p class="info-p"><span id="Browser"></span></p>
+</div>
+<div class="bottom">
+    <div class="bottomCover">
+        <img src="./assets/background.png" class="background">
+    </div>
+    <div class="bottom-text-view">
+        <div style="width: 100%;height:100%;position: relative">
+            <div class="left">
+                <span class="bottom-title">趣发生</span>
+                <span class="bottom-desc">多人协作视频社交</span>
+            </div>
+            <a href="https://www.ci.aroundworld.cn/download/index.html" class="downBTN">下载APP</a>
+        </div>
+    </div>
+</div>
+<script src="videojs-contrib-hls.min.js"></script>
+<script src="./index.js"></script>
+<script>
+
+    //如果是PC端就直接到下载页面
+    if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+
+    } else {
+        window.location.href = "https://www.aroundworld.cn/download/index.html";
+
+    }
+
+
+    //判断浏览器类型
+    var u = navigator.userAgent;
+    console.log(u)
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1;
+    var isWeiXin = u.indexOf('MicroMessenger') > -1;
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+    if(isAndroid){
+        var scheme = "around://around";
+        var aid = getSearchString('aid');
+        var seek = getSearchString('seek');
+        window.location=scheme+'?detail='+aid+'&seek='+seek;//android跳转app
+    }
+
+    if(isWeiXin&&isAndroid){
+        document.getElementById('Browser').innerHTML = '当前微信无法打开，请点击右上角三点图标，使用外部浏览器打开'
+    }else if(isWeiXin&&isiOS){
+        document.getElementById('Browser').innerHTML = '当前微信无法打开，请点击右上角三点图标，使用Safari浏览器打开'
+    }
+    fetchVideo();
+</script>
+</body>
+</html>

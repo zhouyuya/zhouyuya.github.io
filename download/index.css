@@ -1,0 +1,37 @@
+#container{
+    color: #FFF;
+    padding: 48px 0 48px 0;
+    background: url(assets/background.png) no-repeat 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+#container .logo{
+    width: 128px;
+    height: 128px;
+}
+#container h1{
+    margin-top:24px;
+    margin-bottom:12px;
+}
+#container h4{
+    margin-top:0;
+    margin-bottom:12px;
+}
+#container .downBtn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: rgb(233,30,99);
+    margin:14px;
+}
+#container .downBtn:hover{
+    background-color: #b9183e;
+}
+#container .downBtn:focus {
+    background-color: #b9183e;
+}
+#p{
+    margin:12px 12px;
+}
