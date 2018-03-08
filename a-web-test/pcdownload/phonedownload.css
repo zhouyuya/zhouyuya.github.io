@@ -29,7 +29,6 @@ body {
 #tab .tab_right li {
     float:left;
     color:#666666;
-    font-size: 14px;
 }
 
 #tab .tab_right li span.isclick {
