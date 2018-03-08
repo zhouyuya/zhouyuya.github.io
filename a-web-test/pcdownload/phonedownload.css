@@ -48,9 +48,9 @@ body {
 }
 /*首页左边*/
 .content .index .index_middle_top {
+    margin:0 auto 120px;
     width:340px;
     height:325px;
-    display:inline-block;
     text-align: center;
 }
 .content .index .index_middle_top .img1 {
@@ -79,8 +79,7 @@ body {
 .content .index .index_middle_bottom {
     width:435px;
     height:625px;
-    display: inline-block;
-    float:left;
+    margin:0 auto;
 }
 .content .index .index_middle_bottom img {
     width:433px;
@@ -121,7 +120,7 @@ body {
 
 /*用户协议，隐私政策，版权声明*/
 .content .text {
-    width:1120px;
+    width:100%;
     margin: 111px auto 100px;
 }
 .content .text p.title {
@@ -131,7 +130,7 @@ body {
     margin-bottom: 24px;
 }
 .content .text div.word {
-    width:1067px;
+    width:100%;
 }
 .content .text p {
     font-size: 14px;
