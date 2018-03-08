@@ -19,7 +19,7 @@ body {
 }
     /*右边的tab选项*/
 #tab .tab_right {
-    width:468px;
+    width:500px;
     height:19px;
     display:inline-block;
     list-style: none;
