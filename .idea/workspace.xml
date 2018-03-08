@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b60f04d-76d6-497a-92db-a43a0afe7e1d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a-web-test/pcdownload/index.html" afterPath="$PROJECT_DIR$/a-web-test/pcdownload/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a-web-test/detail/index.html" afterPath="$PROJECT_DIR$/a-web-test/detail/index.html" />
     </list>
     <ignored path="zhouyuya.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/a-web-test/pcdownload/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20532319">
+            <state vertical-scroll-proportion="-0.75">
               <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -72,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/a-web-test/detail/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.9722223">
-              <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.3231939">
+              <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -123,12 +122,12 @@
       <list>
         <option value="$PROJECT_DIR$/detail/index.html" />
         <option value="$PROJECT_DIR$/a-web-test/pcdownload/index.js" />
-        <option value="$PROJECT_DIR$/a-web-test/detail/index.html" />
         <option value="$PROJECT_DIR$/a-web-test/pcdownload/pcdownload.css" />
         <option value="$PROJECT_DIR$/a-web-test/pcdownload/phoneindex.html" />
         <option value="$PROJECT_DIR$/a-web-test/pcdownload/phonedownload.css" />
         <option value="$PROJECT_DIR$/a-web-test/pcdownload/phonedownload.html" />
         <option value="$PROJECT_DIR$/a-web-test/pcdownload/index.html" />
+        <option value="$PROJECT_DIR$/a-web-test/detail/index.html" />
       </list>
     </option>
   </component>
@@ -688,14 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/a-web-test/detail/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.9722223">
-          <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/a-web-test/pcdownload/pcdownload.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.75">
@@ -731,7 +722,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/a-web-test/pcdownload/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20532319">
+        <state vertical-scroll-proportion="-0.75">
           <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -743,6 +734,14 @@
             <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a-web-test/detail/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3231939">
+          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
