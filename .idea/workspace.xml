@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9b60f04d-76d6-497a-92db-a43a0afe7e1d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a-web-test/pcdownload/pcdownload.css" afterPath="$PROJECT_DIR$/a-web-test/pcdownload/pcdownload.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a-web-test/pcdownload/phonedownload.css" afterPath="$PROJECT_DIR$/a-web-test/pcdownload/phonedownload.css" />
     </list>
     <ignored path="zhouyuya.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="phonedownload.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="phonedownload.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/a-web-test/pcdownload/phonedownload.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.611111">
-              <caret line="109" column="27" selection-start-line="109" selection-start-column="27" selection-end-line="109" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.5380228">
+              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -82,10 +82,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pcdownload.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pcdownload.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/a-web-test/pcdownload/pcdownload.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46197718">
+            <state vertical-scroll-proportion="-6.75">
               <caret line="117" column="23" selection-start-line="117" selection-start-column="23" selection-end-line="117" selection-end-column="23" />
               <folding />
             </state>
@@ -127,8 +127,8 @@
         <option value="$PROJECT_DIR$/a-web-test/detail/index.html" />
         <option value="$PROJECT_DIR$/a-web-test/pcdownload/index.html" />
         <option value="$PROJECT_DIR$/a-web-test/pcdownload/phonedownload.html" />
-        <option value="$PROJECT_DIR$/a-web-test/pcdownload/phonedownload.css" />
         <option value="$PROJECT_DIR$/a-web-test/pcdownload/pcdownload.css" />
+        <option value="$PROJECT_DIR$/a-web-test/pcdownload/phonedownload.css" />
       </list>
     </option>
   </component>
@@ -356,7 +356,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-66" y="50" width="1942" height="1089" extended-state="1" />
+    <frame x="-66" y="50" width="1942" height="1089" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18802966" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -688,14 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/a-web-test/detail/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.7222223">
-          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/a-web-test/pcdownload/assets/Group 20.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -735,18 +727,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/a-web-test/pcdownload/phonedownload.css">
+    <entry file="file://$PROJECT_DIR$/a-web-test/detail/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.611111">
-          <caret line="109" column="27" selection-start-line="109" selection-start-column="27" selection-end-line="109" selection-end-column="27" />
+        <state vertical-scroll-proportion="-4.7222223">
+          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/a-web-test/pcdownload/pcdownload.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46197718">
+        <state vertical-scroll-proportion="-6.75">
           <caret line="117" column="23" selection-start-line="117" selection-start-column="23" selection-end-line="117" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a-web-test/pcdownload/phonedownload.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5380228">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
           <folding />
         </state>
       </provider>
