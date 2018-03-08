@@ -75,10 +75,23 @@ body {
     display: inline-block;
     float:left
 }
-.content .index .index_left .download img {
+.content .index .index_left .download a {
+    text-decoration: none;
+}
+.content .index .index_left .download a div {
     width:180px;
     height:60px;
     margin-bottom: 32px;
+    background: #333;
+    border-radius: 4px;
+    color:#fff;
+    line-height: 60px;
+    font-size: 20px;
+}
+.content .index .index_left .download a div img {
+    vertical-align: -5px;
+    width:24px;
+    height:24px;
 }
     /*首页右边*/
 .content .index .index_right {
