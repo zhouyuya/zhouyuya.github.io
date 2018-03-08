@@ -341,5 +341,23 @@
     <div>公司：成都海说科技有限公司  |  电话：17311311811</div>
     <div>地址：成都市成华区万科魅力之城金库2单元1401号</div>
 </div>
+<script>
+    //判断浏览器类型
+    var u = navigator.userAgent;
+    console.log(u)
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1;
+    var isWeiXin = u.indexOf('MicroMessenger') > -1;
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+    if(isAndroid){
+        if(isWeiXin){
+            document.getElementById('p').innerHTML = '微信浏览器无法下载，请点击右上角三点图标，使用外部浏览器打开'
+        }else {
+            var scheme = "around://around";
+            var aid = getSearchString('aid');
+            var seek = getSearchString('seek');
+            window.location=scheme+'?detail='+aid+'&seek='+seek;//android跳转app
+        }
+    }
+</script>
 
 </body>
