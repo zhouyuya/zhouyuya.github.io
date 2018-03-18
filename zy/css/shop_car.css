@@ -4,7 +4,7 @@
 
 #content {
 	width:1000px;
-	margin:30px auto 0;	
+	margin:30px auto 30px;
 }
 
 /*logo那一行*/
@@ -109,9 +109,56 @@
 	width:84px;
 }
 #content .goods .title .operation {
-	width:91px;
+	width:90px;
 	border:none;
 }
+
+#content .goods .details {
+	height:100px;
+	line-height:100px;
+}
+#content .goods .details span {
+	display:inline-block;
+	text-align: center;
+}
+#content .goods .details .introduce {
+	width:505px;
+	text-align:left;
+}
+#content .goods .details .price {
+	width:51px;
+}
+#content .goods .details .amount {
+	width:245px;
+}
+#content .goods .details .total {
+	width:85px;
+}
+#content .goods .details .operation {
+	width:91px;
+}
+
+#content .goods .count {
+	height:50px;
+	line-height:50px;
+	background: #f0f0f0;
+}
+#content .goods .count span {
+	display:inline-block;
+	text-align: center;
+}
+#content .goods .count .ge {
+	width:430px;
+}
+#content .goods .count .go {
+	width:85px;
+	background: rgb(226,226,226);
+}
+
+
+
+
+
 
 
 
