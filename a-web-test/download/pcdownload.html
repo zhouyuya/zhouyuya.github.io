@@ -5,14 +5,14 @@
     <title>趣发生</title>
     <meta name="keywords" content="趣发生 视频 视频社交" />
     <link rel="shortcut icon" type="image/x-icon" href="./assets/logo.ico" media="screen" />
-    <link rel="stylesheet" href="phonedownload.css">
+    <link rel="stylesheet" href="pcdownload.css">
     <script src="index.js"></script>
 </head>
 <body>
 <!--最上面的可以点击切换tab-->
 <div id="tab">
     <div class="tab_left" id="tab_left">
-        <img src="assets/Group 20.png" alt="趣发生"/>
+        <img src="assets/Group20.png" alt="趣发生"/>
     </div>
     <ul class="tab_right">
         <li><span class="click isclick">首页</span><span class="line">|</span></li>
@@ -28,7 +28,7 @@
 <!--首页-->
 <div class="content">
     <div class="index">
-        <div class="index_middle_top">
+        <div class="index_left">
             <img class="img1" src="assets/Mask Group 3.png" alt="趣发生"/>
             <div>
                 <img class="img2" src="assets/Group 7.png" />
@@ -48,7 +48,7 @@
                 </div>
             </div>
         </div>
-        <div class="index_middle_bottom">
+        <div class="index_right">
             <img src="assets/Group 1.png" />
         </div>
     </div>
@@ -66,7 +66,7 @@
 <div class="content" style="display: none">
     <div class="contact">
         <p class="p1">联系我们：</p>
-        <p>官网网址：www.aroundworld.cn</p>
+        <p>官网网址：www.qufasheng.com</p>
         <p>客服电话：166813215</p>
         <p>官方QQ群：233333</p>
     </div>
@@ -337,26 +337,9 @@
 
 <!--底部-->
 <div class="bottom">
-    <div class="fortop">2018©趣发生www.aroundworld.com  |  蜀ICP备12000593号-14</div>
+    <div class="fortop">2017©趣发生www.qufasheng.com  |  蜀ICP备11111111号-2</div>
     <div>公司：成都竹心文化传播有限公司  |  电话：17311311811</div>
     <div>地址：成都市成华区万科魅力之城金库2单元1401号</div>
 </div>
-<script>
-    //判断浏览器类型
-    var u = navigator.userAgent;
-    console.log(u)
-    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1;
-    var isWeiXin = u.indexOf('MicroMessenger') > -1;
-    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
-    if(isAndroid){
-        if(isWeiXin){
-            document.getElementById('p').innerHTML = '微信浏览器无法下载，请点击右上角三点图标，使用外部浏览器打开'
-        }else {
-            var scheme = "around://around";
-            var aid = getSearchString('aid');
-            var seek = getSearchString('seek');
-            window.location=scheme+'?detail='+aid+'&seek='+seek;//android跳转app
-        }
-    }
-</script>
+
 </body>
