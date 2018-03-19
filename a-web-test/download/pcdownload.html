@@ -342,4 +342,12 @@
     <div>地址：成都市成华区万科魅力之城金库2单元1401号</div>
 </div>
 
+<script>
+    if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        window.location.href="./phonedownload.html";
+    } else {
+        window.location.href = "./pcdownload.html";
+    }
+</script>
+
 </body>
