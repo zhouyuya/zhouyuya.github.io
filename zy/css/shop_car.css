@@ -152,7 +152,8 @@
 }
 #content .goods .count .go {
 	width:85px;
-	background: rgb(226,226,226);
+	background:rgb(226,226,226);
+	cursor:pointer
 }
 
 

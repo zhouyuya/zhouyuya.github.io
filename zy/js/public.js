@@ -9,9 +9,6 @@ $(document).ready(function (){
 	},function (){
 		oQrCode.css('display','none');		
 	});
-	oQrCode.mouseover(function (){
-		alert('k');	
-	});
 	
 	
 	
