@@ -164,9 +164,45 @@
     cursor:pointer
 }
 
+/*这里是地址*/
+#content .address h2 {
+    margin:20px auto 20px;
+}
+
+#content .address  .address_card {
+    display: block;
+    position: relative;
+    padding: 10px 20px 15px;
+    width: 200px;
+    height: 135px;
+    background: url(../img/new_address.png) -240px 0 no-repeat;
+    cursor: pointer;
+}
+
+#content .address  .address_tit {
+    width: 135px;
+    font: 700 14px/26px helvetica,tahoma,arial,sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+    word-break: break-all;
+    text-overflow: ellipsis;
+}
+
+#content .address .address_card p {
+    color: #666;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+}
 
 
+#content .address .address_card:hover {
+    background: url(../img/new_address.png) -480px 0 no-repeat;
+}
 
+#content .address .address_card.selected, #content .address .address_card.selected:hover {
+    background: url(../img/new_address.png) 0 0 no-repeat;
+}
 
 
 
