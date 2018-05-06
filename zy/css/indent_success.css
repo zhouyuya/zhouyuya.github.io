@@ -74,6 +74,9 @@
     width: 800px;
     overflow: hidden;
 }
+.con_top span {
+    color:#e0221c;
+}
 .con_top dl{
     padding: 30px 0 30px 0;
     overflow: hidden;
@@ -98,9 +101,20 @@
     overflow: hidden;
     padding: 30px 0 0 80px;
 }
-.con_down .left{width: 350px;overflow: hidden;float: left;}
-.left .card_num{font-size: 24px;color:#545454;}
-.con_down .right{width: 370px;float: right;padding-top: 50px;}
+.con_down .left{
+    width: 350px;
+    overflow: hidden;
+    float: left;
+}
+.left .card_num{
+    font-size: 24px;
+    color:#545454;
+}
+.con_down .right{
+    width: 370px;
+    float: right;
+    padding-top: 50px;
+}
 
 
 
