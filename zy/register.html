@@ -37,14 +37,14 @@
         	<span id="passDError" style="display:none;">请重新输入</span>
         </div>
         <!--输入验证码-->
-        <div class="item">
+        <!--<div class="item">
         	<span class="red">*</span>验&nbsp;&nbsp;证&nbsp;&nbsp;码：<input type="text" id="txt" style="width:143px;margin-right:5px" placeholder="短信验证码" disabled="disabled" />
             <input type="button" id="txtBtn" style="width:98px;cursor:pointer;text-indent:0" value="获取短信验证码" />
-        </div>
+        </div>-->
         <!--同意协议后提交，我用的是自动跳转事件，还没有加后台，数据并没有被提交-->
         <div class="bottom">
         	<input type="checkbox" id="read" />&nbsp;我已阅读并同意《<a>永辉商城服务协议</a>》
-        	<div onclick="setTimeout(function (){window.open('reg_success.html','_self');},2000);" id="btn_submit" class="btn_submit btn_submit_gray">同意协议并注册</div>
+        	<div id="btn_submit" class="btn_submit btn_submit_gray">同意协议并注册</div>
         </div>
     </form>
     

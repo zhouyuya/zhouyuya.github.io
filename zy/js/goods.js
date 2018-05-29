@@ -35,19 +35,15 @@ $(document).ready(function () {
 	oPic.onmousemove=function (ev) {
 		oFloat.style.display='block';
 		oBig.style.display='block'; //显示浮动小图和放大图
-		
 		var oEvent=ev || event; //获取事件（鼠标）
-			
 		/*滚动条的值*/
 		var scrTop=document.body.scrollTop || document.documentElement.scrollTop;
 		var scrLeft=document.body.scrollLeft || document.documentElement.scrollLeft;
-		
 		/*L和T是浮动小图在大图的left和top，
 		  T=鼠标与窗口顶部的距离+滚动了的高度-大图与文档顶部的高度-浮动小图的一半高
 		*/
 		var L=oEvent.clientX+scrLeft-oPic.offsetLeft-oFloat.offsetWidth/2;
 		var T=oEvent.clientY+scrTop-oPic.offsetTop-oFloat.offsetHeight/2;
-		
 		/*防止浮动小图溢出大图*/
 		if(L<0) {
 			L=0;	
@@ -61,14 +57,11 @@ $(document).ready(function () {
 		if(T>200) {
 			T=200;	
 		}
-		
 		oFloat.style.left=L+'px';
 		oFloat.style.top=T+'px';
-		
 		/*放大图在放置自己的容器里的left和top*/
 		oBigImg.style.left=-L*2+'px';
 		oBigImg.style.top=-T*2+'px';
-		
 	};
 	
 	

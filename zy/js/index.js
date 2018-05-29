@@ -70,9 +70,7 @@ $(document).ready(function (){
 	
 	function move(){
 		timer=setInterval(function (){
-		
 			oPics.style.left=oPics.offsetLeft-8+'px';
-			
 			if(oPics.offsetLeft<-oPics.offsetWidth/2)
 			{
 				oPics.style.left='0px';   //bug1：当满足条件时，会执行下面的if操作关闭定时器，3秒后启动
@@ -81,32 +79,24 @@ $(document).ready(function (){
 			{
 				oPics.style.left=-oPics.offsetWidth/2+'px';
 			}
-			
-			
 			//当某张图片处于正中时
 			//第二三个条件是为了解决bug1，使得在满足上面的if,ifelse时不执行，重新赋值后再执行
 			if(oPics.offsetLeft%oPic[0].offsetWidth==0
 			&&oPics.oddsetLeft!=0&&oPics.offsetLeft!=-oPics.offsetWidth/2)  
 			{
 				clearInterval(timer);	//关闭定时器
-		
 				setTimeout(function (){
 					move();
 				},3000);  //3秒后开启定时器
-				
-				
 				//第一张图num=0,第二张num=-1,第三张=-2
 				var num=oPics.offsetLeft/oPic[0].offsetWidth;  
 				num+=2;  //第一张num2,二num=1,三num=0
-				
 				for(i=0;i<=2;i++)//小圆点与图片对应
 				{
 					oLib[i].className='lib';
 				}
 				oLib[2-num].className='lib active';
-				
 			}
-			
 		},1);	
 	}
 
