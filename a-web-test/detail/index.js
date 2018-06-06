@@ -46,6 +46,6 @@ function play (json){
     <p class="location">${json.fenceCenterAddress}</p>
     <p class="time">${json.pageView} 次播放</p>`;
   document.title=json.title?json.title:json.describe || '趣发生';
-  //var player = videojs('example-video');
-  //player.play();
+  var player = videojs('example-video');
+  player.play();
 }
