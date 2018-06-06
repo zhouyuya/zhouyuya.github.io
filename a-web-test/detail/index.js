@@ -16,8 +16,8 @@ function getSearchString(key) {
   return obj[key];
 }
 function fetchVideo(){
-  //var aid = getSearchString('aid');
-  var aid = '5add86e16949c10022d9c09a'
+
+  var aid = getSearchString('aid');
   var env = getSearchString('env');
   var obj = new XMLHttpRequest();  // XMLHttpRequest对象用于在后台与服务器交换数据
   //
