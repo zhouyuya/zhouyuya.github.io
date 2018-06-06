@@ -27,7 +27,7 @@ function fetchVideo(){
   obj.onreadystatechange = function() {
     if (obj.readyState == 4 && obj.status == 200 || obj.status == 304) { // readyState == 4说明请求已完成
       var json = JSON.parse(obj.responseText);
-      console.log(json,'cdbcy')
+      console.log(json)
       play(json);
     }else {
       //alert('超时，请刷新页面')
@@ -37,7 +37,7 @@ function fetchVideo(){
 }
 function play (json){
 
-  document.getElementById("video-cover").innerHTML = ` <video id=example-video width="100%" height=100% class="video-js vjs-default-skin" controls>
+  document.getElementById("video-cover").innerHTML = ` <video id="example-video" width="100%" height="100%" class="video-js vjs-default-skin" controls>
             <source
                     src=${json.m3u8}
                     type="application/x-mpegURL">
