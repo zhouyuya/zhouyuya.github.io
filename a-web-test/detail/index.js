@@ -37,7 +37,7 @@ function fetchVideo(){
 }
 function play (json){
 
-  document.getElementById("video-cover").innerHTML = ` <video id="example-video" width="100%" height="100%" class="video-js vjs-default-skin" controls>
+  document.getElementById("video-cover").innerHTML = ` <video id="example-video" width="100%" height="100%" class="video-js vjs-default-skin" data-setup="{}" controls>
             <source
                     src=${json.m3u8}
                     type="application/x-mpegURL">
