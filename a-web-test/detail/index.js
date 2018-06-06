@@ -37,7 +37,7 @@ function fetchVideo(){
 }
 function play (json){
 
-  document.getElementById("video-cover").innerHTML = ` <video id="example-video" width="100%" height="100%" class="video-js vjs-default-skin" data-setup="{}" controls>
+  document.getElementById("video-cover").innerHTML = ` <video id="example-video" width="100%" height="100%" class="video-js vjs-default-skin" controls>
             <source
                     src=${json.m3u8}
                     type="application/x-mpegURL">
@@ -46,6 +46,6 @@ function play (json){
     <p class="location">${json.fenceCenterAddress}</p>
     <p class="time">${json.pageView} 次播放</p>`;
   document.title=json.title?json.title:json.describe || '趣发生';
-  var player = videojs('example-video');
-  player.play();
+  //var player = videojs('example-video');
+  //player.play();
 }
