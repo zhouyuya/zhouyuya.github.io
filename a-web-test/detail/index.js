@@ -2,7 +2,8 @@
 
 function getSearchString(key) {
   // 获取URL中?之后的字符
-  var str = location.search;
+  var str="https://www.aroundworld.cn/detail/index.html?env=product&aid=5b0d1eaf4f42bc6b00bd70e1&seek=0"
+  //var str = location.search;
   str = str.substring(1,str.length);
   // 以&分隔字符串，获得类似name=xiaoli这样的元素数组
   var arr = str.split("&");
@@ -20,16 +21,16 @@ function fetchVideo(){
   var env = getSearchString('env');
   var obj = new XMLHttpRequest();  // XMLHttpRequest对象用于在后台与服务器交换数据
   //
-  var url = env==='ci'?'https://www.ci.aroundworld.cn/api/activity/':'https://www.aroundworld.cn/api/activity/';
+  var url = env==='ci'?'https://www.ci.aroundworld.cn/api/activity/':'https://www.aroundworld.cn/api/v2/activity/';
   console.log(url+aid+'/detail');
   obj.open('GET', url+aid+'/detail', true);
   obj.onreadystatechange = function() {
     if (obj.readyState == 4 && obj.status == 200 || obj.status == 304) { // readyState == 4说明请求已完成
       var json = JSON.parse(obj.responseText);
-      console.log(json)
+      console.log(json,'cdbcy')
       play(json);
     }else {
-      //alert('超时，请刷新页面')
+      alert('超时，请刷新页面')
     }
   };
   obj.send();
