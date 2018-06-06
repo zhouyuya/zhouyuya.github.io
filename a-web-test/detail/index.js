@@ -30,7 +30,7 @@ function fetchVideo(){
       console.log(json,'cdbcy')
       play(json);
     }else {
-      alert('超时，请刷新页面')
+      //alert('超时，请刷新页面')
     }
   };
   obj.send();
