@@ -42,7 +42,7 @@ function play (json){
                     src=${json.m3u8}
                     type="application/x-mpegURL">
         </video>`;
-  document.querySelector("#main").innerHTML=` <p class="title">${json.title?json.title:json.discribe || '趣发生'}</p>
+  document.querySelector("#main").innerHTML=` <p class="title">${json.title?json.title:json.describe || '趣发生'}</p>
     <p class="location">${json.fenceCenterAddress}</p>
     <p class="time">${json.pageView} 次播放</p>`;
   document.title=json.title?json.title:json.describe || '趣发生';
