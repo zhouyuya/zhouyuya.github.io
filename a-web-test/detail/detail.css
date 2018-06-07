@@ -2,10 +2,6 @@
     width:100%;
     height:48px;
     background-color: #FFFFFF;
-    position: fixed;
-    top:0;
-}
-.top_content {
     position: relative;
 }
 .top .top_left {
