@@ -34,8 +34,8 @@
       <file leaf-file-name="video.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/detail/video.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.604651">
-              <caret line="18235" column="20" selection-start-line="18235" selection-start-column="20" selection-end-line="18235" selection-end-column="35" />
+            <state vertical-scroll-proportion="-7.3488374">
+              <caret line="21780" column="0" selection-start-line="21780" selection-start-column="0" selection-end-line="21780" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -44,8 +44,8 @@
       <file leaf-file-name="video-js.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/detail/video-js.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="52" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.67803836">
+              <caret line="311" column="0" selection-start-line="311" selection-start-column="0" selection-end-line="311" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -341,14 +341,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/detail/video.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.604651">
-          <caret line="18235" column="20" selection-start-line="18235" selection-start-column="20" selection-end-line="18235" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/detail/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.0833335">
@@ -357,10 +349,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/detail/video.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.3488374">
+          <caret line="21780" column="0" selection-start-line="21780" selection-start-column="0" selection-end-line="21780" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/detail/video-js.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="52" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.67803836">
+          <caret line="311" column="0" selection-start-line="311" selection-start-column="0" selection-end-line="311" selection-end-column="0" />
           <folding />
         </state>
       </provider>
