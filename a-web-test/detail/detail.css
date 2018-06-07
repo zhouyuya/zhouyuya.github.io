@@ -1,3 +1,165 @@
+.top {
+    width:100%;
+    height:48px;
+    background-color: #FFFFFF;
+    position: relative;
+
+}
+.top .top_left {
+    width:100px;
+    height:24px;
+    display:inline-block;
+    position:absolute;
+    left:16px;
+    top:12px;
+}
+.top .top_left .logo {
+    margin-right: 12px;
+    vertical-align: middle;
+}
+.top .top_left .logo_name {
+    font-size: 15px;
+    vertical-align: middle;
+}
+.top .top_right .open_app {
+    height:28px;
+    width:105px;
+    display:inline-block;
+    background-color: #FF3B30;
+    color:#fff;
+    font-size: 15px;
+    position: absolute;
+    right:16px;
+    top:10px;
+    border-radius: 3%;
+    line-height: 28px;
+    text-align: center;
+}
+
+
+.main .cover {
+    position: fixed;
+    top:48px;
+    bottom: 48px;
+    left:0;
+    right:0;
+    background-color: #000;
+}
+.main .content {
+    position: fixed;
+    bottom:69px;
+    left:12px;
+    right: 14px;
+    height:324px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main .content .content_left {
+    flex:1;
+    margin-right: 8px;
+    display: flex;
+    flex-direction: column ;
+    justify-content: flex-end;
+}
+.main .content .content_left .tag {
+    color:#fff;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.main .content .content_left .detail {
+    color:#fff;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.main .content .content_left .end_time {
+    color:#fff;
+    font-size: 10px;
+    margin-bottom: 8px;
+}
+.main .content .content_left .end_time span {
+    vertical-align:middle;
+}
+.main .content .content_left .end_time img {
+    margin-right: 10px;
+    vertical-align:middle;
+}
+.main .content .content_left .address {
+    color:#FF9500;
+    font-size: 10px;
+    display: inline-block;
+}
+.main .content .content_left .address span {
+    vertical-align:middle;
+}
+.main .content .content_left .address img {
+    margin-right: 10px;
+    vertical-align:middle;
+}
+.main .content .content_right {
+    display: flex;
+    flex-direction: column;
+    height:324px;
+    width:54px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .content .content_right .avatar{
+    height:40px;
+    width:40px;
+}
+.main .content .content_right .litimg{
+    height:32px;
+    width:32px;
+}
+.main .content .content_right .coop{
+    height:54px;
+    width:54px;
+}
+
+.bottom {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:48px;
+    background: url('./assets/Rectangle 1595.png');
+}
+.bottom .bottom_content {
+    height:34px;
+}
+.bottom .bottom_content .bottom_content_name {
+    font-size: 24px;
+    margin-right: 8px;
+    color:#fff;
+    position: fixed;
+    left:16px;
+    bottom: 9px;
+
+}
+.bottom .bottom_content .bottom_content_des {
+    font-size: 12px;
+    color:#fff;
+    position: fixed;
+    left:96px;
+    bottom: 12px;
+}
+.bottom .bottom_content .bottom_content_download {
+    font-size: 18px;
+    color:#E91E63;
+    width:108px;
+    height:32px;
+    display: inline-block;
+    background: url('./assets/Path 10.png');
+    position: fixed;
+    right:16px;
+    bottom: 7px;
+    text-align: center;
+    line-height: 32px;
+}
+
+
+/*
 .videowrapper{
     padding-bottom: 56%;
     width: 100%;
@@ -94,4 +256,4 @@
 .bottom-desc{
     font-size: 12px;
     color: #FFFFFF;
-}
+}*/

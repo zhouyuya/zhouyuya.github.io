@@ -16,7 +16,51 @@
     </style>
 </head>
 <body>
-<div class="videowrapper">
+<div class="top">
+    <div class="top_left">
+        <img src="assets/Mask Group 6.png" class="logo" />
+        <span class="logo_name">趣发生</span>
+    </div>
+    <div class="top_right">
+        <span class="open_app" id="openApp">打开APP观看</span>
+    </div>
+</div>
+
+<div class="main">
+    <div class="cover" id="videoCover">
+        <video id="example-video" width="100%" height="100%" class="video-js vjs-default-skin" controls>
+            <source
+                    src="https://around-prod-1255743394.cos.ap-guangzhou.myqcloud.com/m3u8/5b0d1eaf4f42bc6b00bd70e1/20180529173750/LD/20180529173750_LD.m3u8"
+                    type="application/x-mpegURL">
+        </video>
+    </div>
+    <div class="content">
+        <div class="content_left">
+            <span class="tag">#成都草莓音乐节</span>
+            <span class="detail"><span>2018年的草莓音乐节比以往来的臭一些，淋了三小时瓢泼大雨，为了看陈老师在雨后的泥泞中趟来趟去，anyway，来凑热闹的“老阿姨”们还是很开心</span></span>
+            <span class="end_time"><img src="./assets/Mask Group 522.png" /><span>五小时候结束</span></span>
+            <span class="address"><img src="./assets/Mask Group 521.png" /><span>成都非物质文化遗产博览园</span></span>
+        </div>
+        <div class="content_right">
+            <img class="avatar" src="./assets/avatar.png" />
+            <img class="litimg" src="./assets/Mask Group 504.png" />
+            <img class="litimg" src="./assets/Mask Group 502.png" />
+            <img class="litimg" src="./assets/Mask Group 512.png" />
+            <img class="coop" src="./assets/Group 2573.png" />
+        </div>
+    </div>
+
+</div>
+
+
+<div class="bottom">
+    <div class="bottom_content">
+        <span class="bottom_content_name">趣发生</span>
+        <span class="bottom_content_des">多人协作视频社交</span>
+        <span class="bottom_content_download" id="download">下载APP</span>
+    </div>
+</div>
+<!--<div class="videowrapper">
     <div class="cover" id="video-cover">
     </div>
 </div>
@@ -41,7 +85,7 @@
             <a href="https://www.aroundworld.cn" class="downBTN">下载APP</a>
         </div>
     </div>
-</div>
+</div>-->
 <script src="video.js"></script>
 <script src="videojs-contrib-hls.min.js"></script>
 <script src="./index.js"></script>
