@@ -48,4 +48,5 @@ function play (json){
   document.title=json.title?json.title:json.describe || '趣发生';*/
   var player = videojs('example-video');
   player.play();
+
 }

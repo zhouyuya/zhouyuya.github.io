@@ -3,7 +3,6 @@
     height:48px;
     background-color: #FFFFFF;
     position: relative;
-
 }
 .top .top_left {
     width:100px;
@@ -43,7 +42,6 @@
     bottom: 48px;
     left:0;
     right:0;
-    background-color: #000;
 }
 .main .content {
     position: fixed;
