@@ -367,10 +367,10 @@ body.vjs-full-window {
   color: #66A8CC; }
 
 .video-js .vjs-big-play-button {
-  font-size: 3em;
-  line-height: 1.5em;
-  height: 1.5em;
-  width: 3em;
+  font-size: 2.5em;
+  line-height: 2.3em;
+  height: 2.5em;
+  width: 2.5em;
   display: block;
   position: absolute;
   top: 10px;
@@ -381,9 +381,9 @@ body.vjs-full-window {
   border: 0.06666em solid #fff;
   background-color: #2B333F;
   background-color: rgba(43, 51, 63, 0.7);
-  -webkit-border-radius: 0.3em;
-  -moz-border-radius: 0.3em;
-  border-radius: 0.3em;
+  -webkit-border-radius: 2.5em;
+  -moz-border-radius: 2.5em;
+  border-radius: 2.5em;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -ms-transition: all 0.4s;
@@ -1120,7 +1120,8 @@ video::-webkit-media-text-track-display {
   -moz-box-flex: none;
   -webkit-flex: none;
   -ms-flex: none;
-  flex: none; }
+  flex: none;
+  display:none}
 
 .vjs-playback-rate > .vjs-menu-button,
 .vjs-playback-rate .vjs-playback-rate-value {
