@@ -11,6 +11,9 @@ body,html{
     margin:0 auto;
     height:100%;
     background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .top {
@@ -51,14 +54,15 @@ body,html{
 }
 
 .main {
-
+    flex: 1;
+    position: relative;
 }
 .main .cover {
-    position: fixed;
-    top:48px;
+    position: absolute;
+    top:0;
     left:0;
     right:0;
-    bottom: 48px;
+    bottom: 0;
     background-color: #000;
 }
 .main .cover .video {
@@ -67,8 +71,8 @@ body,html{
 }
 
 .main .content {
-    position: fixed;
-    bottom:69px;
+    position: absolute;
+    bottom:21px;
     left:12px;
     right: 14px;
     height:324px;
@@ -144,11 +148,10 @@ body,html{
     height:48px;
     background: url('./assets/Rectangle 1595.png') no-repeat;
     background-size: cover;
-    position: fixed;
-    bottom: 0;
+    position: relative;
 }
 .bottom .bottom_left {
-    position: fixed;
+    position: absolute;
     bottom:9px;
     left:16px;
 }
@@ -168,7 +171,7 @@ body,html{
     height:32px;
     display: inline-block;
     background: url('./assets/Path 10.png');
-    position: fixed;
+    position: absolute;
     right:16px;
     bottom:9px;
     text-align: center;
