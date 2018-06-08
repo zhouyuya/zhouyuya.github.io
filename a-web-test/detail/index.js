@@ -2,7 +2,7 @@
 
 function getSearchString(key) {
   // 获取URL中?之后的字符
-  var str="https://www.aroundworld.cn/detail/index.html?env=product&aid=5b0d1eaf4f42bc6b00bd70e1&seek=0"
+  var str="https://www.aroundworld.cn/detail/index.html?env=product&aid=5b026c8f94bb012439617b54&seek=0"
   //var str = location.search;
   str = str.substring(1,str.length);
   // 以&分隔字符串，获得类似name=xiaoli这样的元素数组
@@ -35,17 +35,40 @@ function fetchVideo(){
   };
   obj.send();
 }
+function getdate(timeEnd) {
+  if(timeEnd){
+    var time=new Date(timeEnd),
+        y = time.getFullYear(),
+        m = ("0" + (time.getMonth() + 1)).slice(-2),
+        d = ("0" + time.getDate()).slice(-2);
+    return y + "-" + m + "-" + d + " " + time.toTimeString().substr(0, 8)+'结束';
+  }else{
+    return '进行中';
+  }
+
+}
+
 function play (json){
-/*
-  document.getElementById("video-cover").innerHTML = ` <video id="example-video" width="100%" height="100%" class="video-js vjs-default-skin" controls>
+
+  var avatar='./assets/avatar.png';
+  for(var i=0;i<1;i++){
+    avatar=json.contributor[i].avatar;
+  }
+
+  var endtime=getdate(json.timeEnd);
+
+  document.getElementById("videoCover").innerHTML = ` <video id="example-video" class="video-js video vjs-big-play-centered" playsinline controls>
             <source
                     src=${json.m3u8}
                     type="application/x-mpegURL">
         </video>`;
-  document.querySelector("#main").innerHTML=` <p class="title">${json.title?json.title:json.describe || '趣发生'}</p>
-    <p class="location">${json.fenceCenterAddress}</p>
-    <p class="time">${json.pageView} 次播放</p>`;
-  document.title=json.title?json.title:json.describe || '趣发生';*/
+
+  document.getElementById("avatar").setAttribute('src',avatar);
+  document.querySelector("#word").innerHTML=` <span class="tag">#${json.tag?json.tag:'趣发生'}</span>
+            <span class="detail"><span>${json.title?json.title:json.describe || '趣发生'}</span></span>
+            <span class="end_time"><img src="./assets/Mask Group 522.png" /><span>${endtime}</span></span>
+            <span class="address"><img src="./assets/Mask Group 521.png" /><span>${json.fenceCenterAddress}</span></span>`;
+  document.title=json.title?json.title:json.describe || '趣发生';
   var player = videojs('example-video');
 
   player.play();

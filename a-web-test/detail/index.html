@@ -22,28 +22,28 @@
         <span class="logo_name">趣发生</span>
     </div>
     <div class="top_right">
-        <span class="open_app" id="openApp">打开APP观看</span>
+        <a href="https://www.aroundworld.cn"><span class="open_app" id="openApp">打开APP观看</span></a>
     </div>
 </div>
 
 
 <div class="main">
     <div class="cover" id="videoCover">
-        <video id="example-video" class="video-js video vjs-big-play-centered" playsinline controls>
+        <!--<video id="example-video" class="video-js video vjs-big-play-centered" playsinline controls>
             <source
                     src="https://around-prod-1255743394.cos.ap-guangzhou.myqcloud.com/m3u8/5b0d1eaf4f42bc6b00bd70e1/20180529173750/LD/20180529173750_LD.m3u8"
                     type="application/x-mpegURL">
-        </video>
+        </video>-->
     </div>
     <div class="content">
-        <div class="content_left">
-            <span class="tag">#成都草莓音乐节</span>
-            <span class="detail"><span>2018年的草莓音乐节比以往来的臭一些，淋了三小时瓢泼大雨，为了看陈老师在雨后的泥泞中趟来趟去，anyway，来凑热闹的“老阿姨”们还是很开心</span></span>
-            <span class="end_time"><img src="./assets/Mask Group 522.png" /><span>五小时候结束</span></span>
-            <span class="address"><img src="./assets/Mask Group 521.png" /><span>成都非物质文化遗产博览园</span></span>
+        <div class="content_left" id="word">
+            <span class="tag">loading</span>
+            <span class="detail"><span>loading</span></span>
+            <span class="end_time"><img src="./assets/Mask Group 522.png" /><span>loading</span></span>
+            <span class="address"><img src="./assets/Mask Group 521.png" /><span>loading</span></span>
         </div>
         <div class="content_right">
-            <img class="avatar" src="./assets/avatar.png" />
+            <img class="avatar" id="avatar" src="./assets/avatar.png" />
             <img class="litimg" src="./assets/Mask Group 504.png" />
             <img class="litimg" src="./assets/Mask Group 502.png" />
             <img class="litimg" src="./assets/Mask Group 512.png" />
@@ -58,35 +58,9 @@
         <span class="bottom_content_name">趣发生</span>
         <span class="bottom_content_des">多人协作视频社交</span>
     </div>
-        <span class="bottom_content_download" id="download">下载APP</span>
+    <a href="https://www.aroundworld.cn"><span class="bottom_content_download" id="download">下载APP</span></a>
 
 </div>
-<!--<div class="videowrapper">
-    <div class="cover" id="video-cover">
-    </div>
-</div>
-<div id="main">
-    <p class="title">loading...</p>
-    <p class="location">loading...</p>
-    <p class="time">loading...</p>
-</div>
-<div class="info">
-    <p class="info-p"><span id="Browser"></span></p>
-</div>
-<div class="bottom">
-    <div class="bottomCover">
-        <img src="./assets/background.png" class="background">
-    </div>
-    <div class="bottom-text-view">
-        <div style="width: 100%;height:100%;position: relative">
-            <div class="left">
-                <span class="bottom-title">趣发生</span>
-                <span class="bottom-desc">多人协作视频社交</span>
-            </div>
-            <a href="https://www.aroundworld.cn" class="downBTN">下载APP</a>
-        </div>
-    </div>
-</div>-->
 <script src="video.js"></script>
 <script src="videojs-contrib-hls.min.js"></script>
 <script src="./index.js"></script>
@@ -96,7 +70,7 @@
     if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
 
     } else {
-        //window.location.href = "https://www.aroundworld.cn";
+        window.location.href = "https://www.aroundworld.cn";
 
     }
 
