@@ -2,7 +2,7 @@
 
 function getSearchString(key) {
   // 获取URL中?之后的字符
-  var str="https://www.aroundworld.cn/detail/index.html?env=product&aid=5b026c8f94bb012439617b54&seek=0"
+  var str="https://www.aroundworld.cn/detail/index.html?env=product&aid=5aa12aba7749911e0c7be38e&seek=0"
   //var str = location.search;
   str = str.substring(1,str.length);
   // 以&分隔字符串，获得类似name=xiaoli这样的元素数组
