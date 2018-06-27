@@ -44,7 +44,8 @@ function detail(){
   function fetchVideo(){
     function getSearchString(key) {
       // 获取URL中?之后的字符
-      var str = location.search;
+      //var str = location.search;
+      var str='https://www.aroundworld.cn/detail/index.html?env=product&aid=5ae02a2051eff008de42837b&seek=0'
       str = str.substring(1,str.length);
       // 以&分隔字符串，获得类似name=xiaoli这样的元素数组
       var arr = str.split("&");
