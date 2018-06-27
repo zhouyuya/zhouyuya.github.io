@@ -2,18 +2,17 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>趣发生</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <meta name="keywords" content="趣发生 视频 视频社交" />
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/logo.ico" media="screen" />
-    <link rel="stylesheet" href="detail.css">
-    <link rel="stylesheet" href="video-js.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/logo.ico" media="screen"/>
+    <link rel="stylesheet" href="lib/video-js.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>趣发生</title>
 </head>
 <body>
-<div class="box">
 <div class="top">
     <div class="top_left">
-        <img src="assets/Mask Group 6.png" class="logo" />
+        <img src="assets/logo.png" class="logo" />
         <span class="logo_name">趣发生</span>
     </div>
     <div class="top_right">
@@ -21,74 +20,39 @@
     </div>
 </div>
 
-
-<div class="main">
-    <div class="cover" id="videoCover">
-        <!--<video id="example-video" class="video-js video vjs-big-play-centered" playsinline controls>
-            <source
-                    src="https://around-prod-1255743394.cos.ap-guangzhou.myqcloud.com/m3u8/5b0d1eaf4f42bc6b00bd70e1/20180529173750/LD/20180529173750_LD.m3u8"
-                    type="application/x-mpegURL">
-        </video>-->
-   </div>
-    <div class="content">
-        <div class="content_left" id="word">
-            <span class="tag">loading</span>
-            <span class="detail"><span>loading</span></span>
-            <span class="end_time"><img src="./assets/Mask Group 522.png" /><span>loading</span></span>
-            <span class="address"><img src="./assets/Mask Group 521.png" /><span>loading</span></span>
+<div class="cover">
+    <video id="example-video" class="video-js video vjs-big-play-centered" playsinline controls>
+       <!-- <source
+                src="https://around-ci-1255743394.cos.ap-guangzhou.myqcloud.com/m3u8/5b222d35c57af02fe5ad218f/20180614215720/LD/20180614215720_LD.m3u8"
+                type="application/x-mpegURL">-->
+    </video>
+    <div class="text-view">
+        <div class="avatar-view">
+            <img src="./assets/avatar.png" id="myAvatar">
+            <span id="myUsername">加载中...</span>
         </div>
-        <div class="content_right">
-            <img class="avatar" id="avatar" src="./assets/avatar.png" />
-            <img class="litimg" src="./assets/Mask Group 504.png" />
-            <img class="litimg" src="./assets/Mask Group 502.png" />
-            <img class="litimg" src="./assets/Mask Group 512.png" />
-            <img class="coop" src="./assets/Group 2573.png" />
+        <div class="tl-view" style="padding-left: 0;margin-bottom: 4px">
+            <p id="describe"></p>
+        </div>
+        <div class="tl-view">
+            <img src="./assets/ic_time.png">
+            <p id="time">加载中...</p>
+        </div>
+        <div class="tl-view">
+            <img src="./assets/ic_location.png">
+            <p id="location">加载中...</p>
+        </div>
+    </div>
+    <div class="right-view">
+        <div class="right-view-box" id="right-view-box">
+            <p id="right-view-box-p">...</p>
         </div>
     </div>
 </div>
 
+<script src="lib/video.js"></script>
+<script src="lib/videojs-contrib-hls.min.js"></script>
+<script src="js/index.js"></script>
 
-<div class="bottom">
-    <div class="bottom_left">
-        <span class="bottom_content_name">趣发生</span>
-        <span class="bottom_content_des">多人协作视频社交</span>
-    </div>
-    <a href="https://www.aroundworld.cn"><span class="bottom_content_download" id="download">下载APP</span></a>
-
-</div>
-    </div>
-<script src="video.js"></script>
-<script src="videojs-contrib-hls.min.js"></script>
-<script src="./index.js"></script>
-<script>
-
-    //如果是PC端就直接到下载页面
-    if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-
-    } else {
-        window.location.href = "https://www.aroundworld.cn";
-
-    }
-
-    //判断浏览器类型
-    var u = navigator.userAgent;
-    console.log(u)
-    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1;
-    var isWeiXin = u.indexOf('MicroMessenger') > -1;
-    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
-    if(isAndroid){
-        var scheme = "around://around";
-        var aid = getSearchString('aid');
-        var seek = getSearchString('seek');
-        window.location=scheme+'?detail='+aid+'&seek='+seek;//android跳转app
-    }
-
-    if(isWeiXin&&isAndroid){
-        document.getElementById('Browser').innerHTML = '当前微信无法打开，请点击右上角三点图标，使用外部浏览器打开'
-    }else if(isWeiXin&&isiOS){
-        document.getElementById('Browser').innerHTML = '当前微信无法打开，请点击右上角三点图标，使用Safari浏览器打开'
-    }
-    fetchVideo();
-</script>
 </body>
 </html>
